@@ -74,10 +74,10 @@ public class SistemaIndumentaria extends Observable {
 		
 		switch (UtilDB.getTipoConexionBD()) {
 		case 1: // SQLSERVER
-			direccion_archivo = "Proyecto/src/main/resources/create_table_sqlserver.sql";
+			direccion_archivo = "src/main/resources/create_table_sqlserver.sql";
 			break;
 		case 2: // MYSQL
-			direccion_archivo = "Proyecto/src/main/resources/create_table_mysql.sql";
+			direccion_archivo = "src/main/resources/create_table_mysql.sql";
 			break;
 		}
 		UtilDB.ejecutarScriptSQL(direccion_archivo);		
@@ -89,10 +89,10 @@ public class SistemaIndumentaria extends Observable {
 		
 		switch (UtilDB.getTipoConexionBD()) {
 		case 1: // SQLSERVER
-			direccion_archivo = "Proyecto/src/main/resources/insert_table_sqlserver.sql";
+			direccion_archivo = "src/main/resources/insert_table_sqlserver.sql";
 			break;
 		case 2: // MYSQL
-			direccion_archivo = "Proyecto/src/main/resources/insert_table_mysql.sql";
+			direccion_archivo = "src/main/resources/insert_table_mysql.sql";
 			break;
 		}
 		UtilDB.ejecutarScriptSQL(direccion_archivo);		
